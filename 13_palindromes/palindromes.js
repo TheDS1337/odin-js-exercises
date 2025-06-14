@@ -5,10 +5,9 @@ const palindromes = function (str) {
     let len = str.length;
     let mid = Math.ceil(len / 2);
 
-    str = str.trim();
-    str = str.toLowerCase();
+    str = str.trim().toLowerCase();
     
-    for( let i = 0, j = len - 1; i < mid; i++ ) {
+    for( let i = 0, j = len - 1; i < j; i++ ) {
         let a = str[i];
 
         if( !isAlphabet(a) && !isNumber(a) )
